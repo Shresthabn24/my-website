@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>シンプルなウェブサイト</title>
-    <link rel="stylesheet" href="style.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サンプル Webサイト</title>
 
     <!-- 外部CSSのリンク（例: Bootstrapなどを使う場合） -->
@@ -19,22 +13,9 @@
 
     <!-- favicon（ブラウザタブに表示されるアイコン） -->
     <link rel="icon" href="favicon.ico">
-    
 </head>
 <body>
-    <header>
-        <h1>ようこそ！私のウェブサイトへ</h1>
-        <nav>
-            <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">サービス</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- ナビゲーションバー（例: Bootstrapを使った簡単なメニュー） -->
+    <!-- ナビゲーションバー（例: Bootstrapを使った簡単なメニュー） -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">サンプルサイト</a>
@@ -59,32 +40,49 @@
             </div>
         </div>
     </nav>
-        
-        <section class="intro">
-            <h2>自己紹介</h2>
-            <p>こんにちは！私はウェブ開発者です。ここでは、私のプロジェクトやスキルについて紹介します。</p>
+
+    <!-- メインコンテンツ -->
+    <div class="container mt-4">
+        <header>
+            <h1>こんにちは、GitHub Pagesのサンプルサイトへようこそ！</h1>
+            <p>これはGitHub Pagesを使って公開されたWebサイトのサンプルです。</p>
+        </header>
+
+        <section id="about" class="mt-5">
+            <h2>About</h2>
+            <p>このサイトは、GitHubのリポジトリからWebサイトをホスティングする方法を示すサンプルです。</p>
         </section>
 
-        <section class="projects">
-            <h2>プロジェクト</h2>
+        <section id="services" class="mt-5">
+            <h2>サービス</h2>
             <ul>
-                <li>ポートフォリオサイト</li>
-                <li>ブログプラットフォーム</li>
-                <li>オンラインストア</li>
+                <li>ウェブサイト開発</li>
+                <li>デザイン</li>
+                <li>マーケティングサポート</li>
             </ul>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="mt-5">
             <h2>お問い合わせ</h2>
-            <p>メールでの連絡をお待ちしています。</p>
-            <button onclick="sendMessage()">メッセージを送る</button>
+            <p>興味があれば、以下のリンクからお問い合わせください。</p>
+            <a href="mailto:example@example.com" class="btn btn-primary">メールでお問い合わせ</a>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 私のウェブサイト</p>
+        <!-- 画像例 -->
+        <section class="mt-5">
+            <h2>サンプル画像</h2>
+            <img src="https://via.placeholder.com/600x300" alt="サンプル画像" class="img-fluid">
+        </section>
+    </div>
+
+    <!-- フッター -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 サンプルWebサイト</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- 必要なJavaScriptの読み込み（例: Bootstrapの動作に必要） -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
